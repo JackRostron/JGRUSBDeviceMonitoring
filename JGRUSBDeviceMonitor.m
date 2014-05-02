@@ -16,10 +16,8 @@
 id referenceToSelf;
 
 @interface JGRUSBDeviceMonitor ()
-
 @property (nonatomic, copy) void (^connected)(NSDictionary *device);
 @property (nonatomic, copy) void (^removed)(NSDictionary *device);
-
 @end
 
 @implementation JGRUSBDeviceMonitor
