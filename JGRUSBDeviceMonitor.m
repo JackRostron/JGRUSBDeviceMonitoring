@@ -24,10 +24,6 @@ id referenceToSelf;
 
 @implementation JGRUSBDeviceMonitor
 
--(void)testCallback {
-    self.connected(@{@"test":@2});
-}
-
 - (void)monitorForUSBDevicesWithConnectedBlock:(void(^)(NSDictionary *device))connected
                                   removedBlock:(void(^)(NSDictionary *device))removed
 {
