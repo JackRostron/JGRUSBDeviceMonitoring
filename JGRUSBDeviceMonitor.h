@@ -10,6 +10,8 @@
 
 @interface JGRUSBDeviceMonitor : NSObject
 
+- (void)testCallback;
+
 - (void)monitorForUSBDevicesWithConnectedBlock:(void(^)(NSDictionary *device))connected
                                   removedBlock:(void(^)(NSDictionary *device))removed;
 
